@@ -4,4 +4,6 @@ class Course < ApplicationRecord
 	validates :name, :description,
 						:category, :level,
 						presence: true
+
+	has_many :tutors
 end
