@@ -38,6 +38,9 @@ gem "bootsnap", require: false
 # gem for pagination
 gem 'kaminari', '~> 1.2', '>= 1.2.2'
 
+# gem for serializtion
+gem 'active_model_serializers', '~> 0.10.2'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]

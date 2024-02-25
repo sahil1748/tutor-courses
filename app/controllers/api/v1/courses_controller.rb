@@ -13,7 +13,7 @@ class Api::V1::CoursesController < Api::V1::BaseController
 		else
     	render json: { 
 							    		success: true,
-							    		course: res[:course]
+							    		course: CourseSerializer.new(res[:course]
 							    	},
 							    	status: :created
 		end
