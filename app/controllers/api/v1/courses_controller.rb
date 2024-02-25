@@ -20,6 +20,7 @@ class Api::V1::CoursesController < Api::V1::BaseController
 	end
 
 	def index
+    render json: paginate(Course.includes(:tutors)), status: :ok
 	end
 
 	private
