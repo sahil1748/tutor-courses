@@ -7,4 +7,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  namespace(:api, defaults: { format: :json }, path: '/api') do
+    namespace(:v1, defaults: { format: :json }, path: '/v1') do
+
+      resources :courses, only: %i[index create]
+    end
+  end
 end
