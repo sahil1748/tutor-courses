@@ -47,6 +47,7 @@ group :development, :test do
 
   # gem for test cases
   gem 'rspec-rails', '4.0.1'
+  gem 'shoulda-matchers', '~> 6.1'
 end
 
 group :development do
